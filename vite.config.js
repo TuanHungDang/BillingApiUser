@@ -63,4 +63,7 @@ export default defineConfig({
   build: {
     assetsInlineLimit: 0,
   },
+    optimizeDeps: {
+      include: ['@shopify/shopify-api'],
+    },
 });

@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "60c6ed860383f31d0383eb8f713c6174"
-application_url = "https://example.com/"
+application_url = "https://addressing-respective-both-asian.trycloudflare.com"
 embedded = true
 name = "BillingApp"
 handle = "billingapp-10"
@@ -18,7 +18,15 @@ api_version = "2024-10"
 scopes = "write_products"
 
 [auth]
-redirect_urls = [ "https://example.com/api/auth" ]
+redirect_urls = [
+  "https://addressing-respective-both-asian.trycloudflare.com/auth/callback",
+  "https://addressing-respective-both-asian.trycloudflare.com/auth/shopify/callback",
+  "https://addressing-respective-both-asian.trycloudflare.com/api/auth/callback"
+]
 
 [pos]
 embedded = false
+
+[build]
+dev_store_url = "hungstore-vn.myshopify.com"
+automatically_update_urls_on_dev = true
